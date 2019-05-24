@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .am2019-topHeader {
+        display: block;
+        background-color: #e95900;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .am2019-topHeader:hover button {
+        background-color: lightgray;
+      }
+
+      .am2019-topHeader-container {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .am2019-topHeader-icon {
+        width: 5em;
+        /* border: 1px solid gold; */
+      }
+      .am2019-topHeader-icon svg {
+        fill: rgba(255, 255, 255, 1);
+        margin: -4px;
+      }
+      .am2019-topHeader-text {
+        /* border: 1px solid lavender; */
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 10px;
+      }
+      .am2019-topHeader-text p {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .am2019-topHeader-text button {
+        color: black;
+        /* margin-left: 20px; */
+        background: white;
+        border: none;
+        font-size: 0.8em;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding: 10px 15px;
+        pointer-events: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      @media (min-width: 400px) {
+        .am2019-topHeader-icon {
+          width: 2rem;
+        }
+      }
+      @media (min-width: 700px) {
+        .am2019-topHeader-icon {
+          margin-bottom: -5px;
+        }
+
+        .am2019-topHeader-text {
+          flex-flow: row wrap;
+          align-items: center;
+        }
+        .am2019-topHeader-text p {
+          margin-bottom: 0;
+        }
+        .am2019-topHeader-text button {
+          margin-left: 20px;
+        }
+      }
+    </style>
+
+    <a class="am2019-topHeader" href="/no-encuentro-lo-que-busco">
+      <div class="am2019-topHeader-container">
+        <div class="am2019-topHeader-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-3.5h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"
+            />
+            <path fill="none" d="M0 0h24v24H0z" />
+          </svg>
+        </div>
+        <div class="am2019-topHeader-text">
+          <p>¿No encontraste tu producto en este Cyberday?</p>
+          <button>
+            Ingresa aquí
+          </button>
+        </div>
+      </div>
+    </a>
+  </body>
+</html>
