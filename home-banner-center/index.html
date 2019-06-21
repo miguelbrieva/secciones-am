@@ -19,27 +19,32 @@
 
       .AMHome-central-banners-banner {
         display: block;
-        /* background-color: rgba(0, 0, 0, 0.14); */
-        background-color: orangeRed;
+        background-color: rgba(0, 0, 0, 0.14);
         overflow: hidden;
         border-radius: 4px;
-        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+        -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+                box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
       }
 
       .AMHome-central-banners-banner:hover {
-        box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.19);
       }
 
       /* LARGE SMALL */
       .AMHome-central-banners-largeSmall {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-gap: 10px;
       }
 
       /* SMALL LARGE */
       .AMHome-central-banners-smallLarge {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-gap: 10px;
       }
@@ -52,11 +57,13 @@
 
       @media (min-width: 768px) {
         .AMHome-central-banners-smallLarge {
+          -ms-grid-columns: 1fr 21px 2fr;
           grid-template-columns: 1fr 2fr;
           grid-gap: 21px;
         }
 
         .AMHome-central-banners-largeSmall {
+          -ms-grid-columns: 2fr 21px 1fr;
           grid-template-columns: 2fr 1fr;
           grid-gap: 21px;
         }
