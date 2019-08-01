@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Top banner AM</title>
+</head>
+<body>
+    <!-- <div class="custom">{{widget type="WeltPixel\OwlCarouselSlider\Block\Slider\Custom" slider_id="7" type_name="WeltPixel - Custom Slider Widget"}}</div> -->
+  <style>
+    .am-topbanner-image__container {
+      display: block;
+      width: 100%
+    }
+    .am-topbanner-image__container:hover {
+      cursor: pointer
+    }
+    .am-topbanner-image__container img{
+      width: 100%
+    }
+  </style>
+  <a class="am-topbanner-image__container" href="https://www.audiomusica.com/outlet-audiomusica" alt="outlet audiomusica">
+    <picture>
+      <!-- <source media="(min-width: 778px)" srcset="TB-desktop.jpg"> -->
+      <source media="(min-width: 778px)" srcset="{{media url=&quot;AUDIOMUSICA/top-banner/TB-desktop.jpg&quot;}}">
+      <img src="{{media url=&quot;AUDIOMUSICA/top-banner/TB-mobile.jpg&quot;}}" alt="outlet audiomusica">
+    </picture>
+  </a>
+</body>
+</html>
