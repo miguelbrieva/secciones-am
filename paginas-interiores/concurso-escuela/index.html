@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Top banner AM</title>
+</head>
+<body>
+  <style>
+    .concurso-escuela {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .concurso-escuela .concurso-escuela__banner {
+      width: 100%;
+      margin-bottom: 3em;
+    }
+
+    .concurso-escuela .concurso-escuela__banner img {
+      width: 100%;
+    }
+
+    .concurso-escuela__title {
+      font-size: 1.5em;
+      margin-bottom: 1em !important;
+    }
+
+    .concurso-escuela__btn {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding: 1em 2em;
+      color: white !important;
+      background-color: #57b7e7;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.12);
+      border-radius: 5px;
+    }
+
+    .concurso-escuela__legal {
+      margin-top: 3em
+    }
+
+    @media (min-width: 768px) {
+      .concurso-escuela__title {
+        font-size: 2em;
+        text-align: center;
+      }
+      .concurso-escuela__btn {
+        width: 200px;
+      }
+    }
+
+  </style>
+  <div class="concurso-escuela">
+    <div class="concurso-escuela__banner">
+      <picture>
+          <source media="(min-width: 778px)" srcset="{{media url=&quot;banner-pagina-interior-concurso-escuela.jpg&quot;}}">
+          <img src="{{media url=&quot;banner-pagina-interior-mobile.jpg&quot;}}" alt="concurso escuela">
+          <!-- <source media="(min-width: 778px)" srcset="concurso-escuela-desktop.jpg">
+          <img src="concurso-escuela-mobile.jpg" alt="concurso escuela"> -->
+      </div>
+    </picture>
+    <p class="concurso-escuela__title">
+        Por compras sobre $200.000 en tiendas Audiomusica entre el 1 y el 13 de septiembre, presenta tu boleta en cualquiera de las 2 sedes de Escuela Audiomusica y elige un curso gratis de guitarra, canto, piano o bateria*.
+    </p>
+    <a class="concurso-escuela__btn" href="http://www.escuelaudiomusica.cl/contacto/">CONTACTO Y SEDES</a> 
+    <p class="concurso-escuela__legal">*Sólo para compras realizadas entre el 1 al 13 de septiembre de 2019 y presentando la boleta en nuestras sedes de Av. Chile España 393, Ñuñoa y Mall Florida Center hasta agotar stock de 50 cupos disponibles. Sólo un curso por boleta. Curso válido hasta 30 días desde la fecha de emisión de la boleta. Sólo en Región Metropolitana.</p>
+  </div>
+</body>
+</html>
